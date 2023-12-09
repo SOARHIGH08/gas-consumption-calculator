@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, #49ffed, #8cf6ec, #c7f6f1);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+iconify-icon {
+  color: #666;
+  font-size: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 5px 0;
+  color: #333;
+}
+
+#totalPrice,
+#kmPerLiter,
+#pricePerKm {
+  font-weight: bold;
+}
