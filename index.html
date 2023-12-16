@@ -10,57 +10,59 @@
     <title>Gas Consumption Calculator</title>
   </head>
   <body>
-    <h1>Gas Consumption Calculator</h1>
+    <div class="conatiner">
+      <h1>Gas Consumption Calculator</h1>
 
-    <h4 class="date" id="date"></h4>
+      <h4 class="date" id="date"></h4>
 
-    <div class="0">
-      <div class="row">
-        <iconify-icon icon="bi:speedometer"></iconify-icon>
-        <label for="km">Total km</label>
+      <div class="input-cont">
+        <div class="row">
+          <iconify-icon icon="bi:speedometer"></iconify-icon>
+          <label for="km">Total km</label>
+        </div>
+        <input type="number" id="km" name="km" oninput="calculateValues()" />
       </div>
-      <input type="number" id="km" name="km" oninput="calculateValues()" />
-    </div>
 
-    <div class="0">
-      <div class="row">
-        <iconify-icon icon="game-icons:water-gallon"></iconify-icon>
-        <label for="liters">Total liters</label>
+      <div class="input-cont">
+        <div class="row">
+          <iconify-icon icon="game-icons:water-gallon"></iconify-icon>
+          <label for="liters">Total liters</label>
+        </div>
+        <input
+          type="number"
+          id="liters"
+          name="liters"
+          oninput="calculateValues()"
+        />
       </div>
-      <input
-        type="number"
-        id="liters"
-        name="liters"
-        oninput="calculateValues()"
-      />
-    </div>
 
-    <div class="0">
-      <div class="row">
-        <iconify-icon icon="bxs:gas-pump"></iconify-icon>
-        <label for="pricePerLiter">Price / liter</label>
+      <div class="input-cont">
+        <div class="row">
+          <iconify-icon icon="bxs:gas-pump"></iconify-icon>
+          <label for="pricePerLiter">Price / liter</label>
+        </div>
+        <input
+          type="number"
+          id="pricePerLiter"
+          name="pricePerLiter"
+          oninput="calculateValues()"
+        />
       </div>
-      <input
-        type="number"
-        id="pricePerLiter"
-        name="pricePerLiter"
-        oninput="calculateValues()"
-      />
-    </div>
 
-    <div class="row">
-      <p>Total Price:</p>
-      <p id="totalPrice"></p>
-    </div>
+      <div class="row">
+        <p>Total Price:</p>
+        <p id="totalPrice"></p>
+      </div>
 
-    <div class="row">
-      <p>Km / liter:</p>
-      <p id="kmPerLiter"></p>
-    </div>
+      <div class="row">
+        <p>Km / liter:</p>
+        <p id="kmPerLiter"></p>
+      </div>
 
-    <div class="row">
-      <p>Price / km:</p>
-      <p id="pricePerKm"></p>
+      <div class="row">
+        <p>Price / km:</p>
+        <p id="pricePerKm"></p>
+      </div>
     </div>
 
     <script src="main.js"></script>

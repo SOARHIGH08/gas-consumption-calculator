@@ -8,26 +8,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: radial-gradient(circle at 50% 50%, #49ffed, #8cf6ec, #c7f6f1);
+  background-image: url(f1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.conatiner {
+  padding: 15px;
+  border-radius: 10px;
+  border: 5px solid white;
+  backdrop-filter: blur(10px);
 }
 
 .row {
   display: flex;
   gap: 10px;
 }
+input {
+  background-color: rgb(255, 255, 255);
 
+  border-radius: 5px;
+}
 iconify-icon {
-  color: #666;
+  color: #ffffff;
   font-size: 20px;
 }
 
 h1 {
-  color: #333;
+  color: #ffffff;
+  font-size: 25px;
+  text-shadow: 1px 1px 10px #333;
 }
 
 .date {
   font-size: 14px;
-  color: #666;
+  color: #dadada;
+  letter-spacing: 2px;
 }
 
 div {
@@ -36,8 +53,7 @@ div {
 
 label {
   display: block;
-  margin-bottom: 5px;
-  color: #333;
+  color: #ffffff;
 }
 
 input {
@@ -47,8 +63,8 @@ input {
 }
 
 p {
-  margin: 5px 0;
-  color: #333;
+  margin: 3px 0;
+  color: #ffffff;
 }
 
 #totalPrice,
